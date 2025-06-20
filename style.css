@@ -110,13 +110,13 @@ button:hover {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(2, auto); /* 2 kolom sesuai ukuran isi */
-  gap: 15px 20px; /* atas-bawah 15px, kanan-kiri 20px */
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
   justify-content: center;
   align-items: center;
   margin: 20px auto;
-  text-align: center;
-  max-width: 300px; /* batasi lebar galeri agar tidak terlalu renggang */
+  max-width: 600px; /* Batasi lebar di laptop supaya tidak terlalu lebar */
+  padding: 0 10px;
 }
 .gallery-caption {
   grid-column: 1 / -1; /* supaya teks berada di baris atas dan melintasi 2 kolom */
@@ -127,23 +127,26 @@ button:hover {
 }
 .photo-frame {
   background: #ffe4ec;
-  border: 2px solid #f48fb1;
+  border: 3px solid #f48fb1;
   border-radius: 12px;
   padding: 5px;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
-  width: 180px;
-  height: 180px;
-  overflow: hidden;
 }
+
 
 .photo-frame:hover {
   transform: scale(1.08) rotate(-2deg);
 }
 
 .foto {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 8px;
+}
+@media (max-width: 400px) {
+  .gallery {
+    grid-template-columns: 1fr; /* jadi 1 kolom di HP kecil */
+  }
 }
