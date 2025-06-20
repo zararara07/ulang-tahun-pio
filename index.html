@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Selamat Ulang Tahun</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+<img src="assets/kucing.png" class="kucing kiri">
+<img src="assets/kucing.png" class="kucing tengah">
+<img src="assets/kucing.png" class="kucing kanan">
+    <!-- 🎉 HALAMAN UTAMA -->
+    <section id="home" class="page active">
+      <h1>Selamat Ulang Tahun, pioo!!</h1>
+      <p>Wish u all the best cantikkk
+        Semoga suka yaaa !!!
+      </p>
+    <img src="assets/foto1.jpg" class="foto" style="width:400px; height:400px;" />
+      <div class="button-group">
+        <button id="btnPlay">sesuai request</button>
+        <button onclick="navigate('ucapan')">sepatah kata</button>
+        <button onclick="navigate('foto')">foto foto</button>
+      </div>
+    </section>
+
+    <!-- 📝 UCAPAN -->
+    <section id="ucapan" class="page">
+      <h1>doa untuk Pioo</h1>
+      <p>kepala 2 yo sekarang, kita udah makin nambah umur nya, jangan kaya anak anak lagii, sama sama belajar
+        supaya makin dewasa, semoga kita bisa main terus sampe punya anak cucu, mau sengeselin apapun lu, lu tetep temen 
+        gua yang baikkk banget, ga cuma sekedar main sama gibah, tapi keluh kesah juga udah sama sama tau, jangan perna 
+        kepikiran buat jauhin gua ya yo, mau gua dikeadaan kaya gimana pun.
+        LOVE UUUUU!!!!
+        *pls kado nyusul yah, tp pasti kokk, bilang ajah mw beli apa, tpi ga sekarang okeiiii</p>
+      <button onclick="navigate('home')">Kembali</button>
+    </section>
+
+<section id="foto" class="page">
+  <h1>our moment</h1>
+
+<div class="gallery">
+  <p class="gallery-caption">
+    ga pernah bosen dan ga pernah cape buat foto sama lu, ditunggu photobox nya!!
+  </p>
+
+  <div class="photo-frame"><img src="assets/foto2.jpg" class="foto" /></div>
+  <div class="photo-frame"><img src="assets/foto3.jpg" class="foto" /></div>
+  <div class="photo-frame"><img src="assets/foto4.jpg" class="foto" /></div>
+  <div class="photo-frame"><img src="assets/foto5.jpg" class="foto" /></div>
+  <div class="photo-frame"><img src="assets/foto6.jpg" class="foto" /></div>
+  <div class="photo-frame"><img src="assets/foto7.jpg" class="foto" /></div>
+</div>
+
+
+  <button onclick="navigate('home')">Kembali</button>
+</section>
+
+    <!-- 💌 FOOTER -->
+    <footer class="footer">
+      From sahabat till jannahmu
+    </footer>
+  </div>
+
+  <!-- 🎵 Musik -->
+  <audio id="bgm" src="assets/asade.mp3" preload="auto" loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>
